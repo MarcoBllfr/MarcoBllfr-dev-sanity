@@ -15,7 +15,6 @@ export const project = defineType({
             name: 'company',
             title: 'Company',
             type:'string',
-            validation: (rule) => rule.required() 
         }),
         defineField({
             name: 'slug',
