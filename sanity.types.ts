@@ -233,6 +233,8 @@ export type DevExperience = {
   company?: string
   startDate?: string
   endDate?: string
+  descrizione?: string
+  technologies?: Array<string>
 }
 
 export type AllSanitySchemaTypes =

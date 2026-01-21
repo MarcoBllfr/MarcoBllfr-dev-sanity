@@ -34,5 +34,20 @@ export const devExperience = defineType({
                 dateFormat:'YYYY-MM',
             }
         }),
+        defineField({
+            name: 'descrizione',
+            title: 'descrizione',
+            type:'string',
+        }),
+        defineField({
+            name: 'technologies',
+            title: 'Tech Stack',
+            type:'array',
+            of:[{type:'string'}],
+            options:{
+                layout:"tags",
+            },
+        }),
+
     ]
 });
