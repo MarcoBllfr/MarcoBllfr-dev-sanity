@@ -16,6 +16,11 @@ export const project = defineType({
             title: 'Company',
             type:'string',
         }),
+         defineField({
+            name: 'description',
+            title: 'Project description',
+            type:'string',
+        }),
         defineField({
             name: 'slug',
             title: 'Slug - ending of the url to see the project work',
@@ -58,6 +63,6 @@ export const project = defineType({
             },
             validation: (rule) => rule.required() 
         }),
-       
+      
     ]
 });
