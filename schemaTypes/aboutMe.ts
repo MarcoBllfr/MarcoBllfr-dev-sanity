@@ -7,18 +7,10 @@ export const aboutMe = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'italianContent',
-      title: 'Contenuto Italiano (HTML)',
-      type: 'text',
-      rows: 20,
-      validation: (rule) => rule.required()
-    }),
-    defineField({
-      name: 'englishContent',
-      title: 'English Content (HTML)',
-      type: 'text',
-      rows: 20,
-      validation: (rule) => rule.required()
+      name: 'content',
+      title: 'Content',
+      type: 'localizedBlockContent',
+      validation: rule => rule.required()
     })
   ]
 });
